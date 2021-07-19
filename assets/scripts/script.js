@@ -70,7 +70,9 @@ function overridePreventDefault(event) {
    location.href = "galerie.html";
  };
 
-
+ document.getElementById("facebooklogo").onclick = function () {
+  location.href = "https://www.facebook.com/Le-Poil-Flou-100122569017777/?fref=mentions&__tn__=K-R";
+  };
 
 
 

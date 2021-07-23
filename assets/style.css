@@ -92,7 +92,7 @@ ul.widgets_fakenavbar li{display: inline; font-size: 14px; padding: 10px 15px;}
 .blogevent ul li p{margin: 0;line-height: 18px;}
 
 .events ul li{background-color: #191919;margin-bottom: 40px; margin-top: 40px; display: inline; }
-.events ul li h5{margin: 7px 0; color: #fff;}
+.events ul li h5{margin: 7px 0; color: #fff; text-align: center;}
 .events ul li .date{text-align: center;line-height: 38px;color: #fff;padding-top: 10px;padding-bottom: 10px;background-color: rgb(109, 109, 109)}
 .events ul li .date b{display: block;font-size: 30px;}
 .events ul li .date span{font-size: 20px;}

@@ -63,9 +63,6 @@ function overridePreventDefault(event) {
  document.getElementById("idhome").onclick = function () {
    location.href = "index.html";
  };
- document.getElementById("idcours").onclick = function () {
-   location.href = "cours_ateliers.html";
- };
  document.getElementById("idgalerie").onclick = function () {
    location.href = "galerie.html";
  };

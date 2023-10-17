@@ -143,8 +143,8 @@ button.close{position: absolute;right: 0;background: #FFF;width: 25px;height: 25
 
 
 /*animation*/
-#about,.album,.blogevent ul li,h3,h4{visibility: hidden;}
-.animated{visibility: visible !important;}
+/* #about,.album,.blogevent ul li,h3,h4{visibility: hidden;}
+.animated{visibility: visible !important;} */
 /*animation*/
 
 @media (max-width: 700px) {

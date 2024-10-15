@@ -14,6 +14,7 @@
 
 });
 
+
 // navbar background active custom
 // var selector = '.nav li';
 
@@ -25,28 +26,28 @@
 // navbar custom ended
 
   // animation
-$(window).scroll(function() {
-    $('#about,.album,.blogevent ul li').each(function(){
-    var elementPos = $(this).offset().top;
+// $(window).scroll(function() {
+//     $('#about,.album,.blogevent ul li').each(function(){
+//     var elementPos = $(this).offset().top;
 
-    var topOfWindow = $(window).scrollTop();
-      if (elementPos < topOfWindow+400) {
-        $(this).addClass("animated fadeInUp");
-      }
-    });
-
-
-    $('h3,h4').each(function(){
-    var elementPos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-      if (elementPos < topOfWindow+500) {
-        $(this).addClass("animated fadeInUp");
-      }
-    });
+//     var topOfWindow = $(window).scrollTop();
+//       if (elementPos < topOfWindow+400) {
+//         $(this).addClass("animated fadeInUp");
+//       }
+//     });
 
 
-  });
+//     $('h3,h4').each(function(){
+//     var elementPos = $(this).offset().top;
+
+//     var topOfWindow = $(window).scrollTop();
+//       if (elementPos < topOfWindow+500) {
+//         $(this).addClass("animated fadeInUp");
+//       }
+//     });
+
+
+//   });
 
 
 // méthode bourrin pour navbar liens externes
@@ -57,6 +58,9 @@ function overridePreventDefault(event) {
 // $('.navbar a[target=_blank]').on("click", overridePreventDefault)
 
 // fix links in navbar one by one
+document.getElementById("iddates2").onclick = function () {
+  location.href = "dates.html";
+};
  document.getElementById("idspectacle").onclick = function () {
    location.href = "spectacle.html";
  };
@@ -67,11 +71,14 @@ function overridePreventDefault(event) {
    location.href = "galerie.html";
  };
  document.getElementById("idpartenaires").onclick = function () {
-  location.href = "partenaires.html";
+   location.href = "partenaires.html";
 };
-document.getElementById("iddates").onclick = function () {
-  location.href = "dates.html";
-};
+//  document.getElementById("iddates").onclick = function () {
+//    location.href = "spectacle.html";
+// };
+//  document.getElementById("idagenda").onclick = function () {
+//    location.href = "dates.html";
+// };
 
  document.getElementById("facebooklogo").onclick = function () {
   location.href = "https://www.facebook.com/Le-Poil-Flou-100122569017777/?fref=mentions&__tn__=K-R";

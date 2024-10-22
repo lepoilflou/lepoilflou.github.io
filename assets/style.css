@@ -5,7 +5,10 @@ body {font:normal 16px/22px 'Carrois Gothic',Arial,Helvetica;	background:#111;co
 
 h1,h2,h3,h4,h5,h6{ font-weight:normal;padding: 0;margin: 0;margin-bottom: 20px;margin-top: 10px ;color: #fff;}
 /* h1,h2,h3{ font-family: 'Francois One',Arial,Helvetica;text-transform: uppercase;} */
-h1,h2,h3{ font-family: 'Leira Lite','Francois One',Arial,Helvetica;text-transform: uppercase;}
+h1,h2,h3{ font-family: 'Leira Lite','Francois One',Arial,Helvetica;
+	 text-transform: uppercase; 
+	 src: url("../lepoilflou.github.io/F16_Panel leira-lite.ttf") format('truetype');
+	}
 
 h4,h5,h6{ font-family: 'Carrois Gothic',Arial,Helvetica;color: #fff;}
 

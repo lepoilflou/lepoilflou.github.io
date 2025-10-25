@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Le Poil Flou</title>
+
+    <!-- 1️⃣ Google Fonts (different fonts for the two navbars) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Carrois+Gothic&display=swap"
+        rel="stylesheet">
+
+    <!-- 2️⃣ Our custom stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================================================
+     BACKGROUND IMAGE (covers whole page, fixed)
+================================================================== -->
+    <div class="bg-image bg-index"></div>
+    <!-- -------------------------------------------------
+         PAGE WRAPPER – the flex container
+------------------------------------------------- -->
+    <div class="page-wrapper">
+        <!-- ==============================================================
+     MAIN NAVIGATION BAR (black, logo left, page links left)
+================================================================== -->
+        <header class="navbar main-navbar">
+            <div class="nav-container">
+                <!-- LOGO -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+                </a>
+
+                <!-- Hamburger for mobile -->
+                <input type="checkbox" id="main-toggle" class="nav-toggle">
+                <label for="main-toggle" class="nav-toggle-label">&#9776;</label>
+
+                <!-- Main page links -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="spectacles.html">Spectacles</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="contacts.html">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ==============================================================
+     SECONDARY NAVIGATION BAR (different colour & font)
+================================================================== -->
+        <!-- <nav class="navbar secondary-navbar">
+    <div class="nav-container"> -->
+
+        <!-- Hamburger for mobile (independent from the main one) -->
+        <!-- <input type="checkbox" id="sec-toggle" class="nav-toggle">
+        <label for="sec-toggle" class="nav-toggle-label">&#9776;</label> -->
+
+        <!-- Links to sections of THIS page -->
+        <!-- <div class="nav-links"> -->
+        <!-- <a href="#15m2">15 m<sup>2</sup></a>
+            <a href="#armagetongs">ArmageTongs</a>
+            <a href="#contact">Contact</a> -->
+        <!-- </div>
+    </div>
+</nav> -->
+
+        <!-- ==============================================================
+     CONTENT CONTAINER (dark translucent, high z‑index)
+================================================================== -->
+        <main class="content-box">
+            <!-- SECTION 2 – Text on the left, image on the right -->
+            <section id="15m2" class="section split">
+                <div class="left">
+                    <a href="15m2.html">
+                        <h3 class=title-15m2-spectacles style="text-align:center">15 m<sup>2</sup></h3>
+                        <img src="assets/images/background_15m2_darker.jpg" alt="Sample image" class="responsive-img">
+                </div>
+                </a>
+                <div class="right">
+                    <a href="armagetongs.html">
+                        <h3 class=title-armagetongs-spectacles style="text-align:center">ArmageTongs<sup> </sup></h3>
+                        <img src="assets/images/background_armagetongs_darker.jpeg" alt="Sample image"
+                            class="responsive-img">
+                    </a>
+                </div>
+            </section>
+
+            <!-- SECTION 4 – Full‑width text block -->
+            <section id="contact" class="section">
+                <!-- CONTACT LINK – always at the bottom of the container -->
+                <footer class="contact-footer">
+                    <!-- <h1>Contact</h1> -->
+                    <a href="mailto:hello@example.com">
+                        poilflou@protonmail.com
+                    </a>
+                </footer>
+            </section>
+
+            <!-- end of content box  -->
+        </main>
+        <!-- end of page wrapper  -->
+    </div>
+
+    <!-- ==============================================================
+     PAGE FOOTER (tiny text)
+================================================================== -->
+    <footer class="page-footer">
+        Le Poil Flou | Site officiel
+    </footer>
+
+</body>
+
+</html>

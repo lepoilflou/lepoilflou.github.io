@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Le Poil Flou</title>
+
+    <!-- 1️⃣ Google Fonts (different fonts for the two navbars) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Carrois+Gothic&display=swap"
+        rel="stylesheet">
+
+    <!-- 2️⃣ Our custom stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================================================
+     BACKGROUND IMAGE (covers whole page, fixed)
+================================================================== -->
+    <div class="bg-image bg-15m2"></div>
+    <!-- -------------------------------------------------
+         PAGE WRAPPER – the flex container
+------------------------------------------------- -->
+    <div class="page-wrapper">
+        <!-- ==============================================================
+     MAIN NAVIGATION BAR (black, logo left, page links left)
+================================================================== -->
+        <header class="navbar main-navbar">
+            <div class="nav-container">
+                <!-- LOGO -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+                </a>
+
+                <!-- Hamburger for mobile -->
+                <input type="checkbox" id="main-toggle" class="nav-toggle">
+                <label for="main-toggle" class="nav-toggle-label">&#9776;</label>
+
+                <!-- Main page links -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="spectacles.html">Spectacles</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="contacts.html">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ==============================================================
+     SECONDARY NAVIGATION BAR (different colour & font)
+================================================================== -->
+        <!-- <nav class="navbar secondary-navbar">
+    <div class="nav-container"> -->
+
+        <!-- Hamburger for mobile (independent from the main one) -->
+        <!-- <input type="checkbox" id="sec-toggle" class="nav-toggle">
+        <label for="sec-toggle" class="nav-toggle-label">&#9776;</label> -->
+
+        <!-- Links to sections of THIS page -->
+        <!-- <div class="nav-links">
+            <a href="#spectacle">Le spectacle</a>
+            <a href="#documents">Documents</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav> -->
+
+        <!-- ==============================================================
+     CONTENT CONTAINER (dark translucent, high z‑index)
+================================================================== -->
+        <main class="content-box">
+            <h1 class="title title-15m2">15 m<sup>2</sup></h1>
+            <!-- Section SPECTACLE - description of 15 m2 and 2024 trailer -->
+            <section id="spectacle" class="section split">
+                <div class="left">
+
+                    <p class="text descriptif-spectacle">
+                        Création 2023, de 3 à 999 ans, 50 minutes
+                    </p>
+                    <p class="text descriptif-spectacle">
+                        Cohabitation en espace réduit, lecture tout terrain, haute voltige en pyjama
+                    </p>
+                    <p class="text">
+                        Un lit, une étagère, quelques livres. Et deux personnages qui se connaissent bien.
+                    </p>
+                    <p class="text">
+                        Ils partagent un quotidien banal qu’ils détournent sans cesse pour s’évader.
+                        Le sérieux et la contenance ne sont jamais loin. Mais toujours, l’imagination et le jeu
+                        l’emportent,
+                        et rendent à ces deux êtres la possession de leur réalité. </p>
+                    <p class="text">
+                        Par le mouvement acrobatique, le théâtre et la musique, le Poil Flou offre ici un hymne à
+                        la procrastination et au rêve. Entre auto-dérision et poésie, la complicité et la rivalité
+                        cohabitent et convergent dans un univers d’émotions fortes et lumineuses.
+                    </p>
+                </div>
+                <div class="right">
+                    <h3 class="subtitle-15m2">Bande-annonce 2024</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/8IB9-qRONoc?si=ZdwZIgPvjqOrh9Xc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SECTION DOCUMENTS – -->
+            <section id="documents" class="section">
+                <h1 class="subtitle subtitle-15m2">Documents</h1>
+                <div class="row-fill-space gap"> <!-- the flex container -->
+                    <a class="documentlink fill" href="/assets/documents/DossierArtistique_15m2.pdf" download>Dossier
+                        artistique ici</a>
+                    <a class="documentlink fill" href="/assets/documents/FicheTech_15m2.pdf" download>Fiche technique
+                        ici</a>
+                </div>
+            </section>
+
+
+            <!-- SECTION VIDEOS - more trailers  -->
+            <section id="videos" class="section split">
+                <div class="left">
+                    <h3 class="subtitle-15m2">Bande-annonce 2020</h3>
+                    <div class="video-wrapper">
+                        <iframe width=100% height="260" src="https://www.youtube.com/embed/Qi6EJC5w6OE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h3 class="subtitle-15m2">Residences 2021-2022</h3>
+                    <div class="video-wrapper">
+                        <iframe width=100% height="260" src="https://www.youtube.com/embed/50hEPPlM-IE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/images/dessinbonhommes_cris.png" alt="Sample image" class="responsive-img">
+                </div>
+            </section>
+
+
+
+
+            <!-- SECTION CONTACT -->
+            <section id="contact" class="section">
+                <!-- CONTACT LINK – always at the bottom of the container -->
+                <footer class="contact-footer">
+                    <!-- <h1>Contact</h1> -->
+                    <a href="mailto:hello@example.com">poilflou@protonmail.com</a>
+                </footer>
+            </section>
+
+            <!-- end of content box  -->
+        </main>
+        <!-- end of page wrapper  -->
+    </div>
+
+    <!-- ==============================================================
+     PAGE FOOTER (tiny text)
+================================================================== -->
+    <footer class="page-footer">
+        Le Poil Flou | Site officiel
+    </footer>
+
+</body>
+
+</html>

@@ -2,242 +2,156 @@
 <html lang="en">
 
 <head>
-  <title>Poil Flou</title>
-  <link rel="shortcut icon" type="image/png" href="assets/images/imagesPF/logo_icone.png">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
-  <!-- boostrap -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Le Poil Flou</title>
 
-  <link rel="stylesheet" href="assets/animate.css">
-  <link rel="stylesheet" href="assets/style.css">
+    <!-- 1️⃣ Google Fonts (different fonts for the two navbars) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Carrois+Gothic&display=swap"
+        rel="stylesheet">
 
-
-
-
+    <!-- 2️⃣ Our custom stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
 
+    <!-- ==============================================================
+     BACKGROUND IMAGE (covers whole page, fixed)
+================================================================== -->
+    <div class="bg-image bg-index"></div>
+    <!-- -------------------------------------------------
+         PAGE WRAPPER – the flex container
+------------------------------------------------- -->
+    <div class="page-wrapper">
+        <!-- ==============================================================
+     MAIN NAVIGATION BAR (black, logo left, page links left)
+================================================================== -->
+        <header class="navbar main-navbar">
+            <div class="nav-container">
+                <!-- LOGO -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+                </a>
 
+                <!-- Hamburger for mobile -->
+                <input type="checkbox" id="main-toggle" class="nav-toggle">
+                <label for="main-toggle" class="nav-toggle-label">&#9776;</label>
 
-
- <!-- Header Starts -->
- <div class="navbar-wrapper ">
-
-  <div class="container">
-    <div class="navbar navbar-inverse  navbar-fixed-top animated fadeInDown" role="navigation" id="top-nav">
-
-      <!-- widgets social networks starts -->
-      <div class="widget" id="logos_social">
-        <ul class="widgets_social">
-          <li><a id="facebooklogo" class="nav-link active" href="https://www.facebook.com/Le-Poil-Flou-100122569017777/?fref=mentions&__tn__=K-R" target="_self" rel="noopener noreferrer"><img
-             src="assets/images/imagesPF/fblogo.png" height="10%" width="10%" /></a>
-            </li>
-        </ul>
-      </div>
-      <!-- widgets social networksend -->
-
-      <!-- rest of the navbar starts -->
-      <div class="container">
-
-        <!-- logo -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#home"><img src="assets/images/imagesPF/LogoPFblanc.png" height="35" alt="logo" /></a>
-        </div>
-
-
-
-        <div class="navbar" id="links_navbar">
-          
-          <!-- Nav Left Top Starts -->
-          <ul class="widget widgets_fakenavbar">
-            <li><a id="idhome" href="index.html" style="color: white;" target="_self" rel="noopener noreferrer">Le Poil Flou</a></li>
-            <li><a id="idspectacle" href="spectacle.html" target="_self" rel="noopener noreferrer">Spectacle</a></li>
-            <li><a id="iddates2" href="dates.html"  target="_self" rel="noopener noreferrer">Agenda</a></li>
-            <li><a id="idgalerie" href="galerie.html" target="_self" rel="noopener noreferrer">Galerie</a></li>
-
-          </ul>
-          <!-- #Nav Left Top Ends -->
-          <!-- Nav Right top Starts -->
-          <ul class="nav navbar-nav navbar-right navbar-expand-xl navbar-collapse collapse">
-            <li class="active"><a href="#home">La compagnie</a></li>
-            <li><a href="#about">L'équipe</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <!-- #Nav Right top Ends -->
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</div>
-<!-- #Header Ends -->
-
-
-
-
-
-
-
-
-  <!-- overlay -->
-  <div class="container overlay">
-
-
-
-    <!-- home banner starts -->
-    <!-- <div id="home" class="homeinfo">
-      <div class="row" >
-        <div class="col-lg-5 col-sm-12 col-xs-12 ">          
-            <img src="assets/images/imagesPF/LogoPF.png" width="100%"  style = "margin-top : 40px"/>
-        </div>
-        <div class="col-lg-7 col-sm-12 col-xs-12">
-          <div style = "margin-top: 100px; margin-left: 10px; margin-right: 20px; font-size: 18px; color:black">
-            <p>
-              Le Poil Flou c’est un cirque contemporain, théâtral et musical, un langage métissé au service de l’inutile, l’objectif raté qui ouvre de nouvelles portes.
-            </p>
-            <p>
-              C’est le bon poil et le mauvais poil, que l’on découvre là où on ne l’attendait pas vraiment. Celui  qui nous surprend, qui transforme le simple en compliqué. Il se fraye un chemin à travers les possibles, ceux des beautés du quotidien. Frêle et rieur, il explore les presque-rien de l’existence, gorgés de poésie. 
-            </p>
-            <p>Le Poil Flou ouvre des chemins de traverse pour repenser les évidences.
-              </p>
+                <!-- Main page links -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="spectacles.html">Spectacles</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="contacts.html">Contacts</a>
+                </nav>
             </div>
+        </header>
+
+        <!-- ==============================================================
+     SECONDARY NAVIGATION BAR (different colour & font)
+================================================================== -->
+        <!-- <nav class="navbar secondary-navbar">
+    <div class="nav-container"> -->
+
+        <!-- Hamburger for mobile (independent from the main one) -->
+        <!-- <input type="checkbox" id="sec-toggle" class="nav-toggle">
+        <label for="sec-toggle" class="nav-toggle-label">&#9776;</label> -->
+
+        <!-- Links to sections of THIS page -->
+        <!-- <div class="nav-links">
+            <a href="#compagnie">La compagnie</a>
+            <a href="#equipe">L'équipe</a>
+            <a href="#contact">Contact</a>
         </div>
-      </div>
-    </div> -->
-    <!-- home banner ends -->
-
-
-
-    <!-- blockblack -->
-    <div class="blockblack">
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 col-xs-12 ">          
-            <img src="assets/images/imagesPF/LogoPFblanc.png" width="100%"  style = "margin-top : 200px; margin-left: 20px;"/>
-        </div>
-        <div class="col-lg-6 col-sm-12 col-xs-12">
-          <div style = "margin-top: 200px; margin-left: 40px; margin-right: 20px; margin-bottom:100px; font-size: 18px;">
-            <p>
-              Le Poil Flou c’est un cirque contemporain, théâtral et musical, un langage métissé au service de l’inutile, l’objectif raté qui ouvre de nouvelles portes.
-            </p>
-            <p>
-              C’est le bon poil et le mauvais poil, que l’on découvre là où on ne l’attendait pas vraiment. Celui  qui nous surprend, qui transforme le simple en compliqué. Il se fraye un chemin à travers les possibles, ceux des beautés du quotidien. Frêle et rieur, il explore les presque-rien de l’existence, gorgés de poésie. 
-            </p>
-            <p>Le Poil Flou ouvre des chemins de traverse pour repenser les évidences.
-              </p>
-            </div>
-        </div>
-      </div>
-				<iframe width="100%" height="400" src="https://www.youtube.com/embed/8IB9-qRONoc?si=ZdwZIgPvjqOrh9Xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>		
-			
-      <!-- About Starts -->
-      <div id="about" class="spacer animated fadeInUpBig">
-        <div class="row">
-          <div class="col-lg-7 col-sm-12  col-xs-12">
-            <div id="presentation" class="presentation" style="margin-top : 10px">
-            <h2 class="animated fadeInUpBig" style="text-align:center">L'equipe</h3>
-              <div class="col-lg-6 col-sm-6  col-xs-12">
-                <h3 class="animated fadeInUpBig">Aurelien Remy</h3>
-                <h3 class="animated fadeInUpBig" style = "font-size: 18px;">Artiste</h3>
-                <p style = "margin-top:20px; font-size: 14px;">
-                  Aurélien est circassien depuis l’an 2000. A 17 ans il intègre l’école des arts du cirque à Amiens où il perfectionne l’acrobatie au sol et les portés acrobatiques. Il aime également le jonglage, la danse et le swiss ball. 
-                </p>
-              </div>
-              <div class="col-lg-6 col-sm-6  col-xs-12">
-                <h3 class="animated fadeInUpBig">Hugo Stieglitz</h3>
-                <h3 class="animated fadeInUpBig" style = "font-size: 18px;">Artiste</h3>
-                <p style = "margin-top:20px; font-size: 14px;">
-                  Hugo passe son temps à jouer du piano jazz, des percussions, et de la musique électronique. Il a suivi des cours dans plusieurs conservatoires et a eu un court parcours professionnel en tant qu’ingénieur, avant de se dédier au spectacle.
-                </p>
-              </div>
-              <!-- <div class="col-lg-6 col-sm-6  col-xs-12">
-                <h3 class="animated fadeInUpBig">Mathilde Cuchet</h3>
-                <h3 class="animated fadeInUpBig" style = "font-size: 18px;">Production</h3>
-                <p style = "margin-top:20px; font-size: 14px;">
-                  Mathilde est passionnée par les arts de la rue et de l'espace public. Elle suit en 2024 la formation "Chargée de production de projets artistiques" au sein du réseau Octopus pour se perfectionner dans ce domaine. Elle évolue artistiquement dans le milieu de la poésie et de la micro-édition.
-                </p>
-              </div> -->
-                   <div class="col-lg-6 col-sm-6  col-xs-12">
-                <h3 class="animated fadeInUpBig">Les Thérèses</h3>
-                <h3 class="animated fadeInUpBig" style = "font-size: 18px;">Production</h3>
-                <p style = "margin-top:20px; font-size: 14px;">
-                  « Les Thérèses », producteur de spectacle depuis 1994, dédié au spectacle vivant, assure la production de spectacle, l’administration et la gestion pour une quarantaine de projets artistiques et d’une trentaine de compagnies structurées.
-                  Installées depuis 2002 au sein de l’Usine et reconnues dans le milieu professionnel et culturel, Les Thérèses fonctionnent comme une pépinière de talents, une sorte de couveuse…
-                  <!-- Egalement centre de ressources, Les Thérèses reçoivent, émettent, croisent, échangent et expertisent une multitude d’informations d’ordre fiscal, juridique et social nécessaires et indispensables aux structures culturelles et artistiques. -->
-             </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-sm-12  col-xs-12">
-            <img src="assets/images/imagesPF/affiche2_final_transparence.png" class="img-responsive" width=100% 
-              alt="about" style = "margin-bottom: 100px;"/>
-          </div>
-          
-          
-
-        </div>
-      </div>
-      <!-- About Ends -->
-
-      <!--Email Form Starts-->
-      <!-- <div id="contact" style = "margin-left:40px; margin-top:40px" >
-        <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7eXI/MuP" width="100%"></iframe>
-        <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
-      </div> -->
-       <!-- Email form ends-->
-      <!--Contact Starts-->
-      <div id="contact" class="spacer">
-        <div class="contactform center">
-          <h3><span class="glyphicon glyphicon-envelope"></span> Contact</h3>
-          <h5 style="margin-top: 30px; margin-bottom: 220px"> 
-          <a href="mailto:poilflou@protonmail.com" style="text-decoration: underline; color: white;">poilflou@protonmail.com</a>
-        </h5>
-        
-
-        </div>
-      </div>
-     
-        
-     
-
     </div>
-    <!-- blockblack -->
+</nav> -->
 
-  </div>
-  <!-- overlay -->
+        <!-- ==============================================================
+     CONTENT CONTAINER (dark translucent, high z‑index)
+================================================================== -->
+        <main class="content-box">
 
+            <!-- SECTION 2 – Text on the left, image on the right -->
+            <section id="compagnie" class="section split">
+                <div class="left">
+                    <img src="assets/images/logo.png" alt="Sample image" class="responsive-img">
+                </div>
+                <div class="right">
+                    <!-- <h2 class="subtitle">Our Gallery</h2> -->
+                    <p class="text">
+                        Le Poil Flou c’est un cirque contemporain, théâtral et musical, un langage métissé au service de
+                        l’inutile, l’objectif raté qui ouvre de nouvelles portes.
+                    </p>
+                    <p class="text">
+                        C’est le bon poil et le mauvais poil, que l’on découvre là où on ne l’attendait pas vraiment.
+                        Celui qui nous surprend, qui transforme le simple en compliqué. Il se fraye un chemin à travers
+                        les possibles, ceux des beautés du quotidien. Frêle et rieur, il explore les presque-rien de
+                        l’existence, gorgés de poésie.
+                    </p>
+                    <p class="text">
+                        Le Poil Flou ouvre des chemins de traverse pour repenser les évidences.
+                    </p>
+                </div>
+            </section>
 
+            <!-- SECTION 3 – Text on the left, embedded video on the right -->
+            <section id="equipe" class="section split">
+                <div class="left">
+                    <h1 class="subtitle" style="margin-top:150px">L'équipe</h1>
+                    <h2>Aurélien Remy</h2>
+                    <h3>Comédien circassien</h3>
+                    <p class="text">
+                        Aurélien est circassien depuis l’an 2000.
+                        A 17 ans il intègre l’école des arts du cirque à Amiens où il perfectionne l’acrobatie au sol et
+                        les portés acrobatiques.
+                        Il aime également le jonglage, la danse et le swiss ball.
+                    </p>
+                    <h2>Hugo Stieglitz</h2>
+                    <h3>Comédien musicien</h3>
+                    <p class="text">
+                        Hugo passe son temps à jouer du piano jazz, des percussions, et de la musique électronique.
+                        Il a suivi des cours dans plusieurs conservatoires et a eu un court
+                        parcours professionnel en tant qu’ingénieur, avant de se dédier au spectacle.
+                    </p>
+                    <h2>Les Thérèses</h2>
+                    <h3>Administration</h3>
+                    <p class="text">
+                        « Les Thérèses », producteur de spectacle depuis 1994, dédié au spectacle vivant, assure la
+                        production de spectacle,
+                        l’administration et la gestion pour une quarantaine de projets artistiques et d’une trentaine de
+                        compagnies structurées.
+                        Installées depuis 2002 au sein de l’Usine et reconnues dans le milieu professionnel et culturel,
+                        Les Thérèses fonctionnent
+                        comme une pépinière de talents, une sorte de couveuse…
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="assets/images/affiche2_final_transparence.png" alt="Sample image" class="responsive-img">
+                </div>
+            </section>
 
-  <!-- Footer Starts -->
-  <div id="footer">
-    <div class="container">
-      Le Poil Flou | Site officiel
+            <!-- SECTION 4 – Full‑width text block -->
+            <section id="contact" class="section">
+                <!-- CONTACT LINK – always at the bottom of the container -->
+                <footer class="contact-footer">
+                    <!-- <h1>Contact</h1> -->
+                    <a href="mailto:hello@example.com">poilflou@protonmail.com</a>
+                </footer>
+            </section>
+
+            <!-- end of content box  -->
+        </main>
+        <!-- end of page wrapper  -->
     </div>
-  </div>
-  <!-- # Footer Ends -->
 
-
-  <!-- background slider -->
-  <div id="myCarousel" class="carousel slide hidden-xs">
-    <div class="carousel-inner">
-      <div class="active item"><img src="assets/images/imagesPF/rencart5.jpg" alt=""  /></div>
-      <!-- <div class="item"><img src="assets/images/imagesPF/AttentePercu.jpeg" alt="" /></div>
-      <div class="item"><img src="assets/images/imagesPF/Marche.JPG" alt="" /></div> -->
-
-    </div>
-  </div>
-  <!-- background slider -->
-
-
-
-  <script src="https://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
-  <!-- boostrap -->
-  <script src="assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
-  <script src="assets/scripts/plugins.js" type="text/javascript"></script>
-  <script src="assets/scripts/script.js" type="text/javascript"></script>
+    <!-- ==============================================================
+     PAGE FOOTER (tiny text)
+================================================================== -->
+    <footer class="page-footer">
+        Le Poil Flou | Site officiel
+    </footer>
 
 </body>
 

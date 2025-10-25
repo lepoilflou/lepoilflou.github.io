@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Le Poil Flou</title>
+
+    <!-- 1️⃣ Google Fonts (different fonts for the two navbars) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Carrois+Gothic&display=swap"
+        rel="stylesheet">
+
+    <!-- 2️⃣ Our custom stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================================================
+     BACKGROUND IMAGE (covers whole page, fixed)
+================================================================== -->
+    <div class="bg-image bg-contacts"></div>
+    <!-- -------------------------------------------------
+         PAGE WRAPPER – the flex container
+------------------------------------------------- -->
+    <div class="page-wrapper">
+
+        <!-- ==============================================================
+     MAIN NAVIGATION BAR (black, logo left, page links left)
+================================================================== -->
+        <header class="navbar main-navbar">
+            <div class="nav-container">
+                <!-- LOGO -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+                </a>
+
+                <!-- Hamburger for mobile -->
+                <input type="checkbox" id="main-toggle" class="nav-toggle">
+                <label for="main-toggle" class="nav-toggle-label">&#9776;</label>
+
+                <!-- Main page links -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="spectacles.html">Spectacles</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="contacts.html">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ==============================================================
+     SECONDARY NAVIGATION BAR (different colour & font)
+================================================================== -->
+        <!-- <nav class="navbar secondary-navbar">
+    <div class="nav-container"> -->
+
+        <!-- Hamburger for mobile (independent from the main one) -->
+        <!-- <input type="checkbox" id="sec-toggle" class="nav-toggle">
+        <label for="sec-toggle" class="nav-toggle-label">&#9776;</label> -->
+
+        <!-- Links to sections of THIS page -->
+        <!-- <div class="nav-links"> -->
+        <!-- <a href="#15m2">15 m<sup>2</sup></a>
+            <a href="#armagetongs">ArmageTongs</a>
+            <a href="#contact">Contact</a> -->
+        <!-- </div>
+    </div>
+</nav> -->
+
+<!-- ==============================================================
+     CONTENT CONTAINER (dark translucent, high z‑index)
+================================================================== -->
+        <main class="content-box">
+            <!-- SECTION CONTACT ARTISTIQUE PROD DIFF -->
+            <section id="contactprod" class="section">
+                <p class="title-contacts">Contact artistique / diffusion / production</p>
+                <!-- CONTACT LINK – always at the bottom of the container -->
+                <p class="subtitle-contacts">
+                    <a href="mailto:poilflou@protonmail.com">
+                        poilflou@protonmail.com
+                    </a>
+                </p>
+            </section>
+
+            <!-- EMPTY SPACE -->
+            <p>
+                <br>
+            </p>
+            <p>
+                <br>
+
+            </p>
+
+            <!-- SECTION CONTACT ADMIN  -->
+            <section id="contactadmin" class="section">
+                <p class="title-contacts">Contact administratif</p>
+                <!-- CONTACT LINK – always at the bottom of the container -->
+                <p class="subtitle-contacts">
+                    <a href="mailto:thereses@lesthereses.com">
+                        thereses@lesthereses.com
+                    </a>
+                </p>
+            </section>
+
+
+            <!-- SECTION EMPTY -->
+            <section id="empty" class="section">
+                <h1 class="event-list-subtitle">
+                    <p>
+                        <br>
+                        <br>
+
+                    </p>
+                    <p>
+
+                    </p>
+                </h1>
+            </section>
+
+            <!-- end of content box   -->
+        </main>
+        <!-- end of page wrapper  -->
+    </div>
+
+<!-- ==============================================================
+     PAGE FOOTER (tiny text)
+================================================================== -->
+    <footer class="page-footer">
+        Le Poil Flou | Site officiel
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Le Poil Flou</title>
+
+    <!-- 1️⃣ Google Fonts (different fonts for the two navbars) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Carrois+Gothic&display=swap"
+        rel="stylesheet">
+
+    <!-- 2️⃣ Our custom stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================================================
+     BACKGROUND IMAGE (covers whole page, fixed)
+================================================================== -->
+    <div class="bg-image bg-armagetongs"></div>
+    <!-- -------------------------------------------------
+         PAGE WRAPPER – the flex container
+------------------------------------------------- -->
+    <div class="page-wrapper">
+        <!-- ==============================================================
+     MAIN NAVIGATION BAR (black, logo left, page links left)
+================================================================== -->
+        <header class="navbar main-navbar">
+            <div class="nav-container">
+                <!-- LOGO -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+                </a>
+
+                <!-- Hamburger for mobile -->
+                <input type="checkbox" id="main-toggle" class="nav-toggle">
+                <label for="main-toggle" class="nav-toggle-label">&#9776;</label>
+
+                <!-- Main page links -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="spectacles.html">Spectacles</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="contacts.html">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ==============================================================
+     SECONDARY NAVIGATION BAR (different colour & font)
+================================================================== -->
+        <!-- <nav class="navbar secondary-navbar">
+    <div class="nav-container"> -->
+
+        <!-- Hamburger for mobile (independent from the main one) -->
+        <!-- <input type="checkbox" id="sec-toggle" class="nav-toggle">
+        <label for="sec-toggle" class="nav-toggle-label">&#9776;</label> -->
+
+        <!-- Links to sections of THIS page -->
+        <!-- <div class="nav-links">
+            <a href="#spectacle">Le spectacle</a>
+            <a href="#documents">Documents</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav> -->
+
+        <!-- ==============================================================
+     CONTENT CONTAINER (dark translucent, high z‑index)
+================================================================== -->
+        <main class="content-box">
+            <h1 class="title title-armagetongs">ArmageTongs</h1>
+            <!-- SECTION SPECTACLE – Description and image / video -->
+            <section id="spectacle" class="section split">
+                <div class="left">
+                    <p class="text descriptif-spectacle">
+                        Création fin 2026 ou 2027 (en cours), de 6 à 999 ans, 45 minutes
+                    </p>
+                    <p class="text descriptif-spectacle">
+                        “Seul en scène à deux” mêlant danse, acrobatie, magie, clown, musique électronique et
+                        manipulation d’objets
+                    </p>
+                    <p class="text">
+                        Une caisse. Et l’imprévu qui chamboule tout.
+                    </p>
+                    <p class="text">
+                        Toc toc toc ! On est où là ? Et ça c’est qui ? Attends, pourquoi des tongs ?
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="assets/images/armagetongs_bonhomme.png" alt="Sample image" class="small-responsive-img"
+                        height=5rem>
+                </div>
+            </section>
+
+            <!-- SECTION DOCUMENTS -->
+            <section id="documents" class="section">
+                <h1 class="subtitle subtitle-armagetongs">Documents</h1>
+                <div class="row-fill-space gap"> <!-- the flex container -->
+                    <a class="documentlink fill" href="/assets/documents/DossierArtistique_armagetongs.pdf"
+                        download>Dossier artistique ici</a>
+                    <a class="documentlink fill" href="/assets/documents/FicheTech_armagetongs.pdf" download>Fiche
+                        technique ici</a>
+                </div>
+            </section>
+
+            <!-- SECTION CONTACT -->
+            <section id="contact" class="section">
+                <!-- CONTACT LINK – always at the bottom of the container -->
+                <footer class="contact-footer">
+                    <!-- <h1>Contact</h1> -->
+                    <a href="mailto:hello@example.com">poilflou@protonmail.com</a>
+                </footer>
+            </section>
+
+            <!-- end of content box  -->
+        </main>
+        <!-- end of page wrapper  -->
+    </div>
+
+    <!-- ==============================================================
+     PAGE FOOTER (tiny text)
+================================================================== -->
+    <footer class="page-footer">
+        Le Poil Flou | Site officiel
+    </footer>
+
+</body>
+
+</html>

@@ -535,6 +535,70 @@ a:hover {
 .split .right {
     flex: 1;
 }
+/* -------------------------------------------------------------
+   Three equal columns, wraps on small screens
+   ------------------------------------------------------------- */
+.three-cols {
+    display: flex;
+    flex-wrap: wrap;               /* allow stacking when too narrow */
+    gap: 1rem;                     /* space between columns */
+    --cols: 1;                     /* default = 1 column (mobile) */
+}
+
+/* -------------------------------------------------------------
+   2️⃣ Change the column count at the break‑points you like.
+      Adjust the min‑width values to suit your design.
+   ------------------------------------------------------------- */
+@media (min-width: 600px) {       /* two columns from 600 px up */
+    .three-cols { --cols: 2; }
+}
+@media (min-width: 900px) {       /* three columns from 900 px up */
+    .three-cols { --cols: 3; }
+}
+
+/* -------------------------------------------------------------
+   3️⃣ Each child gets an equal share of the row.
+       The min‑width forces a wrap when the viewport is too narrow.
+   ------------------------------------------------------------- */
+.three-cols > * {
+    flex: 1 1 0;                  /* grow, shrink, basis = 0 → equal width */
+    min-width: 250px;             /* when the row can’t hold the set
+                                      number of columns, items wrap */
+}
+
+/* -------------------------------------------------------------
+   4️⃣ Video wrapper – dynamic 16:9 ratio based on column count
+   ------------------------------------------------------------- */
+.video-wrapper {
+    position: relative;
+    width: 100%;                                   /* fill column width */
+    /* 56.25% = 9/16 → divide by the current column count */
+    padding-bottom: calc(56.25% / var(--cols));
+    background: #000;                              /* fallback colour */
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/* The iframe (or <video>) fills the wrapper exactly */
+.video-wrapper iframe,
+.video-wrapper video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* -------------------------------------------------------------
+   5️⃣ OPTIONAL: a tiny visual aid while developing
+   ------------------------------------------------------------- */
+.video-wrapper::before {
+    content: attr(style);
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.05);
+    pointer-events: none;
+}
 
 .responsive-img {
     width: 100%;
@@ -551,23 +615,6 @@ a:hover {
     margin-right: auto;
 }
 
-/* Video wrapper keeps aspect ratio */
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 4px;
-}
-
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 /* Stack vertically on small screens */
 @media (max-width: 768px) {

@@ -574,10 +574,18 @@ a:hover {
     width: 100%;                                   /* fill column width */
     /* 56.25% = 9/16 → divide by the current column count */
     /* padding-bottom: calc(56.25% / var(--cols)); */
-    padding-bottom: 56.25%;
+    /* padding-bottom: 56.25%; */
     background: #000;                              /* fallback colour */
     overflow: hidden;
     border-radius: 4px;
+}
+
+.video_15m2 {
+    padding-bottom: 56.25%;
+}
+
+.video_armagetongs {
+    padding-bottom: calc(56.25% / var(--cols));
 }
 
 /* The iframe (or <video>) fills the wrapper exactly */

@@ -573,7 +573,8 @@ a:hover {
     position: relative;
     width: 100%;                                   /* fill column width */
     /* 56.25% = 9/16 → divide by the current column count */
-    padding-bottom: calc(56.25% / var(--cols));
+    /* padding-bottom: calc(56.25% / var(--cols)); */
+    padding-bottom: 56.25%;
     background: #000;                              /* fallback colour */
     overflow: hidden;
     border-radius: 4px;

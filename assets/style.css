@@ -78,7 +78,10 @@ h6 {
 }
 
 .bg-index {
-    background: url('../assets/images/background_index.jpg') center/cover no-repeat;
+    background: url('../assets/images/background_index2.jpg') center/cover no-repeat;
+}
+.bg-spectacles {
+    background: url('../assets/images/background_spectacles.jpg') center/cover no-repeat;
 }
 
 .bg-agenda {
@@ -200,15 +203,18 @@ article,
 
 .nav-toggle-label {
     display: none;
-    font-size: 1.8rem;
+    font-size: 3.5rem;
     cursor: pointer;
     color: #fff;
+    margin-top:30px;
 }
 
 /* Links container */
 .nav-links {
     display: flex;
     gap: 20px;
+    margin-top:30px;
+    font-size:1.2rem;
 }
 
 .nav-links a {
@@ -230,6 +236,7 @@ article,
     top: 0;
     left: 0;
     width: 100%;
+    height:10%;
     z-index: 1100;
     /* higher than everything else */
 }
@@ -244,8 +251,9 @@ article,
 }
 
 .main-navbar .logo-img {
-    height: 45px;
+    height: 75px;
     margin-right: 8px;
+    margin-top:38px;
 }
 
 /* ==============================================================
@@ -398,6 +406,15 @@ section,
     text-align: justify;
 }
 
+.text-home {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    /* margin-right: 10 rem;
+    margin-left: 1.5rem; */
+    text-align: justify;
+
+}
+
 .descriptif-spectacle {
     font-style: italic;
 }
@@ -427,7 +444,7 @@ a:hover {
 
 .title-armagetongs {
     font-family: 'impactregular';
-    font-size: 5rem;
+    font-size: 4rem;
     /* font-size: var(--fluid-text); */
 }
 .title-armagetongs-spectacles {

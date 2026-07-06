@@ -95,6 +95,9 @@ h6 {
 .bg-armagetongs {
     background: url('../assets/images/background_armagetongs.jpeg') center/cover no-repeat;
 }
+.bg-cabaret {
+    background: url('../assets/images/background_cabaret.jpg') center/cover no-repeat;
+}
 
 .bg-contacts {
     background: url('../assets/images/background_contacts.jpg') center/cover no-repeat;
@@ -455,6 +458,23 @@ a:hover {
 
 .subtitle-armagetongs {
     font-family: 'impactregular';
+    font-size: 2.5rem;
+    /* font-size: var(--fluid-text); */
+}
+
+.title-cabaret {
+    font-family: 'tecnico';
+    font-size: 4rem;
+    /* font-size: var(--fluid-text); */
+}
+.title-cabaret-spectacles {
+    font-family: 'tecnico';
+    font-size: 2.5rem;
+    /* font-size: var(--fluid-text); */
+}
+
+.subtitle-cabaret {
+    font-family: 'tecnico';
     font-size: 2.5rem;
     /* font-size: var(--fluid-text); */
 }

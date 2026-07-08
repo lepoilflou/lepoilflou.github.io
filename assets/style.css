@@ -36,6 +36,7 @@ h4,
 h5,
 h6 {
     font-weight: normal;
+    margin-top:10px;
 }
 
 /* Wrapper that contains everything (header + content + footer) */
@@ -83,6 +84,9 @@ h6 {
 }
 .bg-spectacles {
     background: url('../assets/images/background_spectacles.jpg') center/cover no-repeat;
+}
+.bg-collectif {
+    background: url('../assets/images/background_collectif.jpeg') center/cover no-repeat;
 }
 
 .bg-agenda {
@@ -224,7 +228,7 @@ article,
 .nav-links a {
     color: inherit;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 100;
 }
 
 .nav-links a:hover {
@@ -490,6 +494,14 @@ a:hover {
     text-decoration: none;
     text-align: center;
     font-size: 1.7rem;
+}
+
+
+.title-collectif {
+    font-size: 2rem;
+}
+.subtitle-collectif {
+    font-size: 1.5rem;
 }
 
 /* -------------------------------------------------------------

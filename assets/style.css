@@ -114,74 +114,7 @@ h6 {
         display: none;
     }
 } */
-/* -------------------------------------------------------------
-   1️⃣  Force background images for BOTH colour‑scheme modes
-   ------------------------------------------------------------- */
-body,
-html,
-section,
-article,
-.div-with-bg {
-    /* add any selector that carries a bg‑image */
-    /* 1️⃣ Always set the image – the rule below will override any
-       colour‑scheme specific rules that might be hiding it. */
-    background-image: var(--bg-image, none) !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-/* -------------------------------------------------------------
-   2️⃣  Dark‑mode specific fix
-   -------------------------------------------------------------
-   If you (or a UI framework) use a media query like
-   @media (prefers-color-scheme: dark) { … } and inside it you
-   change the background‑color, the image can get “covered”.
-   The rule below re‑applies the image when the user is in dark mode.
-   ------------------------------------------------------------- */
-@media (prefers-color-scheme: dark) {
-
-    body,
-    html,
-    section,
-    article,
-    .div-with-bg {
-        /* Re‑declare the same image – the !important from above
-           makes sure it wins over any dark‑mode background‑color
-           declarations that might otherwise hide it. */
-        background-image: var(--bg-image, none) !important;
-        /* If you want a slightly dimmer look in dark mode you can
-           add a semi‑transparent overlay instead of removing the
-           image completely. */
-        /* background-blend-mode: multiply;   <-- optional */
-        /* background-color: rgba(0,0,0,0.35); <-- optional overlay */
-    }
-}
-
-/* -------------------------------------------------------------
-   3️⃣  How to use it – set a CSS custom property (--bg-image)
-   -------------------------------------------------------------
-   Instead of writing the URL directly in every selector, define
-   the image once with a custom property.  This keeps the markup
-   clean and makes the dark‑mode override trivial.
-
-   Example in your HTML (inline or in a separate stylesheet):
-   ------------------------------------------------------------- */
-.hero {
-    --bg-image: url('assets/images/hero‑desktop.jpg');
-    /* default image */
-    /* optional fallback colour if the image fails to load */
-    background-color: #111;
-}
-
-/* If you need a different image for mobile you can combine it
-   with a media query – the same custom property will be honoured
-   by the dark‑mode block above. */
-/* @media (max-width: 600px) {
-    .hero {
-        --bg-image: url('assets/images/hero‑mobile.jpg');
-    }
-} */
 
 /* ==============================================================
    NAVIGATION BARS (shared helpers)
